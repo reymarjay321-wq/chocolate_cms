@@ -1,0 +1,11 @@
+# Allow only image files to be served from this directory
+<FilesMatch "(?i)\.(php|php3|php4|php5|phtml|pl|py|cgi|sh|shtml)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Allow image files
+<FilesMatch "(?i)\.(jpg|jpeg|png|gif|webp|svg)$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
