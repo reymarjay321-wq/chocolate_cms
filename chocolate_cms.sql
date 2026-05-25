@@ -4,11 +4,9 @@
 --   mysql -u root -p < chocolate_cms.sql
 -- ================================================================
 
-CREATE DATABASE IF NOT EXISTS `chocolate_cms`
-    CHARACTER SET utf8mb4
-    COLLATE utf8mb4_unicode_ci;
 
-USE `chocolate_cms`;
+
+
 
 -- Drop and recreate table
 DROP TABLE IF EXISTS `chocolates`;
